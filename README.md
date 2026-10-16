@@ -27,12 +27,14 @@ O projeto requer a configuração prévia de um arquivo `.env` para segurança d
    Crie um arquivo **`.env`** na raiz do projeto com a sua chave:
 
 ```
-Snippet de código
+**Snippet de código**
+
 GEMINI_API_KEY=sua_chave_de_api_aqui
+
+```
 (Nota: O arquivo  **`.env`**  e a pasta local de dados são protegidos via 
 **`.gitignore`**).
-```
-
+<br> <br>
 ## 🚀 Como Executar o Pipeline (Fluxo Diário)
 O pipeline opera de forma sequencial. Abra o terminal e execute:
 
@@ -45,8 +47,10 @@ Extrair textos do LinkedIn: **`python extrator_linkedin.py`**
 (Opcional) Inserir vaga externa manualmente: **`python ingestor_manual.py`**
 
 **Fase 2: Curadoria de IA**
+<br>
 4. Avaliar fila de espera: python **`avaliador_vagas_pro.py`**
 
 ## 📊 Gestão de Resultados
-O avaliador consolida as aprovações e reprovações no arquivo **`dados_vagas/planilha_gestao_vagas.csv`** no formato:
+O avaliador consolida as aprovações e reprovações no arquivo **`dados_vagas/planilha_gestao_vagas.csv`** no formato:<br>
+
 ```Data | Score (0-100) | Fit (SIM/NÃO) | Motivo da Decisão | Link | Status de Aplicação```
